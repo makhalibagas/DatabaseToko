@@ -7,7 +7,7 @@ def koneksi():
         host="localhost",
         user="root",
         passwd="",
-        database="perpus_py",
+        database="tokoku_py",
         autocommit=True
         )
     if db.is_connected():

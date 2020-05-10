@@ -3,12 +3,12 @@ import connect
 db=connect.koneksi()
 
 #menambahkan data baru ke dalam tabel member
-def add(data):
+def add(datatoko):
     cursor=db.cursor()
     sql="""INSERT INTO member(nama,alamat)VALUES(%s,%s)"""
-    cursor.execute(sql,data)
+    cursor.execute(sql,datatoko)
     db.commit()
-    print('{} Data member berhasil ditambahkan!'.format(cursor.rowcount))
+    print('{} Data toko berhasil ditambahkan!'.format(cursor.rowcount))
 
 #menampilkan seluruh data(record) dari tabel member
 def show():
